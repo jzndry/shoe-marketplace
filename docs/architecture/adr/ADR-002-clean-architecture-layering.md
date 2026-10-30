@@ -2,7 +2,6 @@
 
 **Status:** Accepted  
 **Date:** October 2026  
-**Deciders:** Lead Software Engineer & Quality Engineer  
 
 ---
 
@@ -10,7 +9,7 @@
 
 Marketplace backends frequently degenerate into "fat controllers" or tightly coupled database queries inside route handlers. This makes automated testing slow, makes switching data backends difficult, and obscures business logic behind HTTP concerns.
 
-To showcase senior backend engineering practices, the architecture must maintain strict separation of concerns, testability in isolation, and dependency inversion.
+To showcase strong backend engineering practices, the architecture will maintain strict separation of concerns, testability in isolation, and dependency inversion.
 
 ---
 
@@ -26,7 +25,7 @@ flowchart TD
         Schemas["Pydantic Request & Response DTOs"]
     end
 
-    subgraph Application ["2. Application Layer (Services)"]
+    subgraph Application ["2. Application Layer (Services)"]    
         ListingService["ListingService (validation, business rules)"]
         OrderService["OrderService (checkout, state transitions)"]
         AuthService["AuthService (JWT, password verification)"]
